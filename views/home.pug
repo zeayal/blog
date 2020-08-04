@@ -1,0 +1,10 @@
+extends layouts/default
+
+block content
+    div=title
+        ul
+            each issue in issues
+                li  
+                    a(href=`/post/${issue._id}`)= issue.title
+block footer
+    div 我是刘紫阳 一个追求自由的人 这里是我的博客
